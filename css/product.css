@@ -1,0 +1,27 @@
+.container .item1 {grid-area: main;}
+.container .item2 {grid-area: gallery2;}
+.container .item3 {grid-area: gallery3;}
+.container .item4 {grid-area: gallery4;}
+.container {
+	display: grid;
+	grid-template-columns: 150px auto;
+	grid-template: 
+		'main gallery2 '
+		'main gallery3'
+		'main gallery4';
+	grid-gap: 10px;
+}
+
+.container2 div { background-color: aqua}
+.container2 .item1 {grid-area: main;}
+.container2 .item2 {grid-area: gallery2;}
+.container2 .item3 {grid-area: gallery3;}
+.container2 .item4 {grid-area: gallery4;}
+.container2 {
+	display: grid;
+	grid-template: 
+		'main gallery2'
+		'main gallery3'
+		'main gallery4';
+	grid-gap: 10px;
+}

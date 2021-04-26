@@ -1,66 +1,593 @@
 @charset "utf-8";
 /* CSS Document */
-* {margin: 0;
+
+/*
+#ID - פניה לאיי.די
+
+.class - פניה לקלאס
+
+h8 - פניה לתגיג
+
+ul.mainmenu - פניה רק לקלאס שנמצא על תגית מסוימת
+*/
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Rubik', sans-serif;
+*/
+  
+/* css reset */
+
+
+
+html {
+	font-family: 'Rubik', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-body {
-	padding: 0px;
-	font-family: lato, sans-serif;
+* {
+	padding: 0;
+	margin: 0;
 }
 
 a {
-  color: black;
-  text-decoration: none; /* no underline */
+	text-decoration: none;
 }
 
-a:clicked {
+input[type=submit] {
+	background-color: lightgray;
+	border: none;
+	padding: 3px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 }
 
+
+/* End of CSS reset */
+
+/* Menu CSS Here */
+
+.btt {
+	display: block;
+	width: 50px;
+	background-color: teal;
+	color: white;
+	padding: 15px 5px;
+	text-align: center;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.btt:hover {
+	background-color: #003F3F;
+}
+
+nav {
+	background-color: #003F3E;
+	padding: 20px 20px 20px 20px;
+}
+
+.mainmenu {
+	text-align: center;
+}
+
+li.menuitem {
+	list-style-type: none;
+	display: inline;
+	margin: 0 20px;
+	
+}
+
+.menulink {
+	font-family: 'Playfair Display', serif;
+	font-weight: 300;
+	color: white;
+	font-size: 1.2em;
+	border-bottom: 3px solid rgba(225,225,225,0);
+	padding-bottom: 15px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;	
+}
+
+.menulink:hover {
+	color: #D2D2D2;
+	border-bottom: 2px solid rgba(225,225,225,1);
+	padding-bottom: 5px;
+}
+
+/* MENU END */
+
+/* Header CSS here */
+
+header {
+	background-image: url("../img/header_bg.jpg");
+	background-position: center;
+	background-size: cover;
+	padding: 340px 50px 340px 250px;
+	max-height: 900px;
+}
 
 h1 {
-	color: lightblue;
-	font-family: sans-serif;
-	font-size: 3.4em;
+	font-size: 4.2em;
+	color: white;
+
 }
 
+.headerp {
+	color: white;
+	font-weight: 300;
+	font-size: 2em;
+	
+}
 
-
-
-
-section {
-	background-color: #52FF66;
-	padding: 15px;
+.headerbutton {
+	display: block;
+	font-size: 1.2em;;
+	color: white;
+	background-color: #003F3E;
+	width: 160px;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	margin-top: 200px; 
-}
-
-
-section:hover {
-	background-color: blue;
--webkit-transition: 0.8s;
-}
-
-ul {
-	text-align: center;
-	margin: 0px!important;
-	background-color: gold;
 	padding: 12px;
-}
-
-li {
-	list-style: none;
-	display: inline;
-	margin-right: 20px;
-}
-
-li a {
+	margin: 50px 0;
 	transition: 0.5s;
-	margin: 15px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;	
 }
 
-li a:hover {
-	font-weight: 900;
+.headerbutton:hover {
+	background-color: #002221;
+	
 }
+
+p#newp {
+	color: white;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+
+/* section css */
+
+
+
+#main_section {
+	width: 70%;
+	margin: 0 auto;
+	padding: 100px;
+}
+
+#main_section h2 {
+	font-size: 3.2em;
+	text-align: center;
+	margin: 45px auto;
+	
+}
+
+.gridcontainer {
+	display: grid;
+	grid-template-columns: 400px 400px;
+	justify-content: center;
+	grid-gap: 25px;
+	
+}
+
+.buynow {
+	background-color: #EFEFEF;
+	padding: 26px;
+}
+
+.buynow h3 {
+	color: teal;
+	font-size: 1.6em;
+}
+
+.buynow p {
+	font-size: 0.9em;
+	line-height: 1.35em;
+	text-align: justify;
+ 	text-justify: inter-character;
+	color: #1E1E1E;
+	margin: 10px 0;
+	
+}
+
+.buynow a {
+	display: block;
+	background-color: teal;
+	color:  #EFEFEF;
+	padding: 11px;
+	text-align: center;
+	margin: 15px 0;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;	
+}
+
+.buynow a:hover {
+	background-color: #003C3C;
+	font-weight: 600;
+	
+}
+
+.buynow img {
+	display: block;
+	width: 100%;
+}
+
+/* contact us section here */
+
+
+#contactussec {
+	width: 100%;
+	margin: 55px auto 0;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 30px;
+}
+
+.formdiv {
+	background-image: url("../img/sectionleftBG.jpg");
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	
+}
+
+.formdiv .contactinput{
+	
+	display: block;
+	margin: 15px auto;
+	padding: 8px;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 2px solid white;
+	width: 60%;
+	color: white;
+	box-sizing: border-box;
+
+}
+
+input.btn_submit {
+	width: 60%;
+	box-sizing: border-box;
+	padding: 8px;
+	background-color: rgba(0,0,0,0.2);
+	border: 2px solid white;
+	color: white;
+	display: block;
+	margin: 30px auto 00px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;	
+}
+
+input.btn_submit:hover {
+	cursor: pointer;
+	padding: 8px;
+	background-color: rgba(0,0,0,1);
+	
+}
+
+.formdiv ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.overlay {
+	background-color: rgba(0,0,0,0.7);
+	padding: 120px;
+	height: 100%;
+}
+
+
+.contactdetails {padding: 120px}
+
+.contactdetails h3 {font-size: 1.4em;}
+
+.contactdetails p {
+	font-size: 1em;
+	margin-top: 10px;
+	font-weight: 300;
+	line-height: 1.4em;
+	color: #3F3F3F;
+	text-align: left;
+}
+
+
+/* Footer start here  */
+
+footer#footer {
+	background-color: teal;
+	margin-top: 0px;
+	padding: 20px 70px;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	color: white;
+	grid-gap: 15px;
+}
+
+.followus {
+	text-align: center;
+}
+
+.followus h4 {
+	font-size: 1.2em;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.copy p {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.newsletter h4 {
+	text-align: center;
+}
+
+.newsletter input {
+	display: block;
+	width: 200px;
+	margin: 8px auto;
+	box-sizing: border-box;
+	padding: 8px 15px 8px 15px;
+	border-radius: 15px;
+	border: none;
+}
+
+.newsletter input[type=submit] {
+	background-color: orange;
+	text-align: center;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;	
+}
+
+.newsletter input[type=submit]:hover {
+	background-color: darkorange;
+	text-align: center;
+	cursor: pointer;
+	
+}
+
+
+
+
+
+
+
+.fa.fa-twitter, .fa.fa-facebook, .fa.fa-instagram {
+	color: white;
+	font-size: 2em;
+	padding: 5px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;	
+}
+
+.fa.fa-twitter:hover, .fa.fa-facebook:hover, .fa.fa-instagram:hover {
+	color: #FFA500;
+	
+}
+
+
+@media only screen and (max-width: 1150px) {
+	
+	header {
+	padding: 250px 100px 250px 100px;
+	max-height: 900px;
+}
+
+h1 {
+	font-size: 3em;
+	color: white;
+
+}
+
+.headerp {
+	color: white;
+	font-weight: 300;
+	font-size: 1.4em;
+	
+}
+
+.headerbutton {
+	margin: 30px 0;
+	
+}
+	
+.formdiv .contactinput{
+	
+	width: 100%;
+
+}
+
+input.btn_submit {
+	width: 100%;
+
+}
+	
+
+
+
+	
+	
+}
+
+@media only screen and (max-width: 950px) {
+	#main_section {
+	width: 70%;
+	padding: 80px;
+}
+
+#main_section h2 {
+	
+}
+
+.gridcontainer {
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	grid-gap: 25px;
+	
+}
+
+.buynow {
+	padding: 26px;
+}
+
+.buynow h3 {
+	font-size: 1.6em;
+}
+
+.buynow p {
+	font-size: 0.9em;
+	line-height: 1.35em;
+	text-align: justify;
+ 	text-justify: inter-character;
+	margin: 10px 0;
+	
+}
+
+.buynow a {
+	display: block;
+	padding: 11px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+
+.buynow img {
+	display: block;
+	width: 100%;
+}
+	
+}
+
+@media only screen and (max-width: 750px) {
+	header {
+	padding: 200px 50px 200px 50px;
+	
+}
+
+h1 {
+	font-size: 3em;
+	color: white;
+	text-align: center;
+
+}
+
+.headerp {
+	color: white;
+	font-weight: 300;
+	font-size: 1.6em;
+	text-align: center;
+	
+}
+
+.headerbutton {
+	margin: 20px auto;
+	width: 350px;
+	padding: 14px
+}
+	#main_section h2 {
+		padding: 00px 20px;
+		text-align: center;
+	
+}
+
+.gridcontainer {
+	display: block;
+	
+	
+}
+
+.buynow {
+	padding: 20px;
+	margin: 30px auto 50px;
+	
+}
+
+.buynow h3 {
+	font-size: 1.6em;
+}
+
+.buynow p {
+	font-size: 0.9em;
+	line-height: 1.35em;
+	text-align: justify;
+ 	text-justify: inter-character;
+	margin: 10px 0;
+	
+}
+
+.buynow a {
+	display: block;
+	padding: 11px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+
+.buynow img {
+	display: block;
+	width: 100%;
+}
+	
+	
+	.overlay {
+	background-color: rgba(0,0,0,0.7);
+	padding: 30px;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+	header {
+	padding: 100px 20px 100px 20px;
+	
+}
+
+h1 {
+	font-size: 2.0em;
+	
+
+}
+
+.headerp {
+	font-size: 1.7em;
+	margin-top: 10px;
+	
+	
+}
+
+.headerbutton {
+	width: 200px;
+	box-sizing: content-box;
+	padding: 14px;
+}
+	
+	
+	
+}
+
+
+
+
